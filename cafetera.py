@@ -63,10 +63,8 @@ class CoffeeMachinePlus:
         # get items from each recipe Ej: {'coffee' : 30}
         recipe_elements = self.recipes[recipe_name].items()
         for element, quantity in recipe_elements:
-            try:
-                recipes_counter.append(self.resources[element] // quantity)
-            except ZeroDivisionError:
-                raise ValueError('No puedes dividir por 0')
+            if quantity == 0: continue
+            recipes_counter.append(self.resources[element] // quantity)
         return min(recipes_counter)
 
     def substract_items(self, recipe):

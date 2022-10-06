@@ -47,20 +47,21 @@ class Test(unittest.TestCase):
         self.assertEqual(cafetera.resources["milk"], 100-70)
         self.assertEqual(cafetera.resources["coins"], 0)
 
-    # def testCase_how_much_recipes(self):
-    #     cafetera = CoffeeMachinePlus()
-    #     cafetera.add_resource("coffee", 300)
-    #     cafetera.add_resource("coins", 5)
-    #     result = cafetera.how_much_recipes('coffee_alone')
-    #     self.assertEqual(result, 5)
+    def testCase_how_much_recipes(self):
+        cafetera = CoffeeMachinePlus()
+        cafetera.add_resource("coffee", 300)
+        cafetera.add_resource("coins", 5)
+        result = cafetera.how_much_recipes('coffee_alone')
+        self.assertEqual(result, 5)
 
-    # def testCase_how_much_recipes_2(self):
-    #     cafetera = CoffeeMachinePlus()
-    #     cafetera.add_resource("coffee", 300)
-    #     cafetera.add_resource("coins", 15)
-    #     result = cafetera.how_much_recipes('coffee_alone')
-    #     self.assertEqual(result, 10)
-    def testCase_how_much_recipes_20(self):
+    def testCase_how_much_recipes_2(self):
+        cafetera = CoffeeMachinePlus()
+        cafetera.add_resource("coffee", 300)
+        cafetera.add_resource("coins", 15)
+        result = cafetera.how_much_recipes('coffee_alone')
+        self.assertEqual(result, 10)
+        
+    def testCase_resources(self):
         cafetera = CoffeeMachinePlus()
         cafetera.add_resource("coffee", 300)
         cafetera.add_resource("coins", 15)
