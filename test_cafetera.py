@@ -66,7 +66,6 @@ class Test(unittest.TestCase):
         cafetera.add_resource("coins", 15)
         cafetera.add_resource("sugar", 2)
         cafetera.change_recipe_item('coffee_alone', 'sugar', 5)
-        print(cafetera.recipes['coffee_alone']['sugar'])
         self.assertEqual(cafetera.recipes['coffee_alone']['sugar'], 25)
 
 
