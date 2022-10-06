@@ -1,6 +1,3 @@
-from xml.etree.ElementTree import Element
-
-
 class CoffeeMachinePlus:
     def __init__(self):
         self.resources = {
