@@ -1,5 +1,5 @@
 import unittest
-from cafetera import CoffeeMachinePlus
+from .cafetera import *
 
 
 class Test(unittest.TestCase):
