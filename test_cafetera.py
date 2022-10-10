@@ -8,7 +8,7 @@ class Test(unittest.TestCase):
         return super().setUp()
     def testCase_just_coffee(self):
         self.cafetera.add_resource('coins')
-        self.cafetera.add_resource("coffee", 31)
+        self.cafetera.add_resource("coffee", 32)
         result = self.cafetera.make_coffee("coffee_alone")
         self.assertTrue(result)
 
