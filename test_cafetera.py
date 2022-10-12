@@ -1,5 +1,5 @@
 import unittest
-from .cafetera import *
+from cafetera import *
 
 
 class Test(unittest.TestCase):
