@@ -6,6 +6,7 @@ class Test(unittest.TestCase):
     def setUp(self) -> None:
         self.cafetera = CoffeeMachinePlus()
         return super().setUp()
+    
     def testCase_just_coffee(self):
         self.cafetera.add_resource('coins')
         self.cafetera.add_resource("coffee", 32)
