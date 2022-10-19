@@ -59,5 +59,5 @@ class Test(unittest.TestCase):
         self.assertEqual(self.cafetera.recipes["coffee_alone"]["sugar"], 25)
 
 
-if __name__ == "__main__":
+if __name__ == "__main__": # pragma: no cover
     unittest.main()
